@@ -1,1 +1,2 @@
 # rockpaperscissors
+In this project I will try to make rock paper scissors with javascript. I don't think it will be too hard if I plan it out before coding. I may have to search some things up but I don't think it will be too bad. Lets do thiss!!1
