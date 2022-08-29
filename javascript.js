@@ -11,7 +11,7 @@ function finalplayerselection(playerselection) {
 }
   console.log(`The Player Chose ${finalplayerselection(playerselection)} and the computer chose ${computerselection}`)
 
-  if (finalplayerselection(playerselection) == computerselection){console.log("This round is a draw!")} else if (finalplayerselection(playerselection) == "Rock") {console.log(Rock())} else if (finalplayerselection(playerselection) == "Paper") {console.log(Paper())} else if (finalplayerselection(playerselection) == "Scissors") {console.log(Scissors())}
+  if (finalplayerselection(playerselection) == computerselection){console.log("This round is a draw!")} else if (finalplayerselection(playerselection) == "Rock") {Rock()} else if (finalplayerselection(playerselection) == "Paper") {Paper()} else if (finalplayerselection(playerselection) == "Scissors") {Scissors()} else {console.log("You might've mispelled your choice.")}
 
  function Rock(){
     if (computerselection = "Scissors") {console.log("Rock beats Scissors so the Player wins!")} else if (computerselection = "Paper") {console.log("Rock loses to Paper so the Computer wins!")}
