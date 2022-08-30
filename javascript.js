@@ -11,17 +11,20 @@ function finalplayerselection(playerselection) {
 }
   console.log(`The Player Chose ${finalplayerselection(playerselection)} and the computer chose ${computerselection}`)
 
-  if (finalplayerselection(playerselection) == computerselection){console.log("This round is a draw!")} else if (finalplayerselection(playerselection) == "Rock") {Rock()} else if (finalplayerselection(playerselection) == "Paper") {Paper()} else if (finalplayerselection(playerselection) == "Scissors") {Scissors()} else {console.log("You might've mispelled your choice.")}
+function playround(computerselection, playerselection){
+  if (finalplayerselection(playerselection) == computerselection){return "This round is a draw!"} else if (finalplayerselection(playerselection) == "Rock") {return Rock()} else if (finalplayerselection(playerselection) == "Paper") {return Paper()} else if (finalplayerselection(playerselection) == "Scissors") {return Scissors()} else {return "You might've mispelled your choice."}
+}
 
  function Rock(){
-    if (computerselection = "Scissors") {console.log("Rock beats Scissors so the Player wins!")} else if (computerselection = "Paper") {console.log("Rock loses to Paper so the Computer wins!")}
+    if (computerselection == "Scissors") {return "Rock beats Scissors so the Player wins!"} else if (computerselection == "Paper") {return "Rock loses to Paper so the Computer wins!"}
  }
 
  function Paper(){
-    if (computerselection = "Rock") {console.log("Paper beats Rock so the Player wins!")} else if (computerselection = "Scissors") {console.log("Paper loses to Rock so the Computer wins!")}
+    if (computerselection == "Rock") {return "Paper beats Rock so the Player wins!"} else if (computerselection == "Scissors") {return "Paper loses to Rock so the Computer wins!"}
  }
 
  function Scissors(){
-    if (computerselection = "Paper") {console.log("Scissors beats Paper so the Player wins!")} else if (computerselection = "Rock") {console.log("Scissors loses to Rock so the Computer wins!")}
+    if (computerselection == "Paper") {return "Scissors beats Paper so the Player wins!"} else if (computerselection == "Rock") {return "Scissors loses to Rock so the Computer wins!"}
  }
  
+ console.log(playround(computerselection, playerselection))
