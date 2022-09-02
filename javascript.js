@@ -8,6 +8,9 @@ function finalplayerselection(playerselection) {
     return (playerselection.substring(0,1)).toUpperCase() + (playerselection.substring(1)).toLowerCase()
 }
 
+let playerscore = 0
+let computerscore = 0
+
 function playround(){
   let playerselection = prompt ("Rock,Paper or Scissors?")
   let computerselection = getcomputerselection()
@@ -28,8 +31,9 @@ function playround(){
  
 }
 
- 
  for (let i = 0; i < 5; i++){
     console.log(playround())
  }
 
+ console.log(`The Player score is ${playerscore} and the Computer score is ${computerscore}.`)
+ if (playerscore > computerscore) {console.log("The Player wins this game!")} else if (playerscore < computerscore) {console.log("The computer wins this game!")} else {console.log("This game is a draw!")}
