@@ -18,15 +18,15 @@ function playround(){
   if (finalplayerselection(playerselection) == computerselection){return "This round is a draw!"} else if (finalplayerselection(playerselection) == "Rock") {return Rock()} else if (finalplayerselection(playerselection) == "Paper") {return Paper()} else if (finalplayerselection(playerselection) == "Scissors") {return Scissors()} else {return "You might've mispelled your choice."}
   
   function Rock(){
-    if (computerselection == "Scissors") {return "Rock beats Scissors so the Player wins!"} else if (computerselection == "Paper") {return "Rock loses to Paper so the Computer wins!"}
+    if (computerselection == "Scissors") {playerscore++ ; return "Rock beats Scissors so the Player wins!"} else if (computerselection == "Paper") {computerscore++ ; return "Rock loses to Paper so the Computer wins!"}
  }
 
  function Paper(){
-    if (computerselection == "Rock") {return "Paper beats Rock so the Player wins!"} else if (computerselection == "Scissors") {return "Paper loses to Rock so the Computer wins!"}
+    if (computerselection == "Rock") {playerscore++ ; return "Paper beats Rock so the Player wins!"} else if (computerselection == "Scissors") {computerscore++ ; return "Paper loses to Rock so the Computer wins!"}
  }
 
  function Scissors(){
-    if (computerselection == "Paper") {return "Scissors beats Paper so the Player wins!"} else if (computerselection == "Rock") {return "Scissors loses to Rock so the Computer wins!"}
+    if (computerselection == "Paper") {playerscore++ ; return "Scissors beats Paper so the Player wins!"} else if (computerselection == "Rock") {computerscore++ ; return "Scissors loses to Rock so the Computer wins!"}
  }
  
 }
